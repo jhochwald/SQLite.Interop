@@ -8,7 +8,7 @@
 #  under the terms of the GNU General Public License as published by the
 #  Free Software Foundation, either version 3 of the License, or (at your
 #  option) any later version.
-# 
+#
 #  This program is distributed in the hope that it will be useful, but WITHOUT
 #  ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
 #  FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
@@ -27,7 +27,7 @@ clean()
 	rm -rf test.db bin obj tmp dotnet-sdk dotnet-install.sh
 }
 
-clean 
+clean
 
 trap clean 0
 
@@ -78,10 +78,10 @@ fi
 
 	cd tmp
 
-	VERSION=1.0.117.0
+	VERSION=1.0.118.0
 
 	ZIPNAME="sqlite-netStandard20-binary-$VERSION.zip"
-	SHA256=d35cb72316bf55349305fb0698c52c8b8117127a3211ff163c288fa2a7f9b633
+	SHA256=21093e5ffa803009c6b02e5f5495b5e07971fd0371c667359960419068a432f2
 
 	curl --silent --fail --output "$ZIPNAME" --location "https://system.data.sqlite.org/blobs/$VERSION/$ZIPNAME"
 
