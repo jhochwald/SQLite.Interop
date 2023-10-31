@@ -10,27 +10,18 @@ the [NuGet System.Data.SQLite.Core](https://www.nuget.org/packages/System.Data.S
 uses [Precompiled Binaries for the .NET Standard 2.0](https://system.data.sqlite.org/index.html/doc/trunk/www/downloads.wiki)
 to execute.
 
-#### Why this fork?
-
-This public fork exists for only two reasons:
-
-- I mentioned my patch/changes here: [Help Needed: Non-Windows Platform Support #21](https://github.com/jdhitsolutions/MySQLite/issues/21)
-- To align with the [GPLv3](http://www.gnu.org/licenses).
-
-And because I want to update to the newer version.
-
-### Requirements
+## Requirements
 
 There are a few requirements, but not much.
 In general, you will need the full [.NET 6.0](https://dotnet.microsoft.com/en-us/download/dotnet/6.0) SDK!
 
-#### Linux
+### Linux
 
 - gcc
 - zip
 - unzip
 
-#### macOS
+### macOS
 
 - Xcode Command Line Tools (They contain GCC)
 
@@ -41,3 +32,12 @@ These scripts are licensed using [GPLv3](http://www.gnu.org/licenses). [SQLite i
 ### Please note
 
 See also [SQLite](https://system.data.sqlite.org/index.html/doc/trunk/www/downloads.wiki) and [.NET RID Catalog](https://learn.microsoft.com/en-us/dotnet/core/rid-catalog).
+
+#### Why this fork?
+
+This public fork exists for only two reasons:
+
+- I mentioned my patch/changes here: [Help Needed: Non-Windows Platform Support #21](https://github.com/jdhitsolutions/MySQLite/issues/21)
+- To align with the [GPLv3](http://www.gnu.org/licenses).
+
+And because I want to update to the newer version.
