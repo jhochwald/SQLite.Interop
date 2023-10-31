@@ -8,7 +8,7 @@
 #  under the terms of the GNU General Public License as published by the
 #  Free Software Foundation, either version 3 of the License, or (at your
 #  option) any later version.
-# 
+#
 #  This program is distributed in the hope that it will be useful, but WITHOUT
 #  ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
 #  FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for
@@ -18,8 +18,8 @@
 #  along with this program.  If not, see <http://www.gnu.org/licenses/>
 #
 
-SHA256=b9a96a6245284c8a4a24394cf8f1045f1cfedc0ce552fa601868872f23677c1b
-VERSION=1.0.117.0
+SHA256=bb599fa265088abb8a7d4af6218cae97df8b9c8ed6f04fb940a5d564920ee6a1
+VERSION=1.0.118.0
 
 ZIPNAME="sqlite-netFx-source-$VERSION.zip"
 
@@ -58,8 +58,8 @@ mkdir src
 			then
 				:
 			else
-				sed "s/-arch x86_64/-arch x86_64 -arch arm64/g" < compile-interop-assembly-release.sh > compile-interop-assembly-osx.sh 
-				mv compile-interop-assembly-osx.sh compile-interop-assembly-release.sh 
+				sed "s/-arch x86_64/-arch x86_64 -arch arm64/g" < compile-interop-assembly-release.sh > compile-interop-assembly-osx.sh
+				mv compile-interop-assembly-osx.sh compile-interop-assembly-release.sh
 			fi
 			;;
 		* )
@@ -91,7 +91,7 @@ case $(uname) in
 		ARCH=
 		;;
 	Linux )
-		FORMAT=$( objdump -p "$DLLPATH" | grep "$DLLNAME.dll" | while read A; do for B in $A; do C="$B"; done ; echo "$C"; break; done ) 
+		FORMAT=$( objdump -p "$DLLPATH" | grep "$DLLNAME.dll" | while read A; do for B in $A; do C="$B"; done ; echo "$C"; break; done )
 
 		ID=$( . /etc/os-release ; echo $ID )
 		VERSION_ID=$( . /etc/os-release ; echo $VERSION_ID )
